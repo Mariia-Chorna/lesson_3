@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>lesson_3</title>
+    <style>
+ table {
+        table-layout: fixed;
+        width: 50%;
+        border-collapse: collapse;
+        border: 3px solid purple;
+}
+         td {
+            border: 1px solid #000;
+            padding: 1px;;
+         }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+<form action="https://fom.in.ua/echo" method="post">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Пошук</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="Тип-кузова">Тип кузова</label>
+                </td>
+                <td>
+                   <select name="car type" id="Тип-кузова">
+                    <option value="1">Седан (4 двері)</option>
+                    <option value="2">Хетчбек 4/5 дверей</option>
+                    <option value="3">Хетчбек 2/3 двері</option>
+                    <option value="4">Купе (2 двері)</option>
+                    <option value="5">Кабріолет/Родстер</option>
+                    <option value="6">Універсал</option>
+                    <option value="7">Мінівен</option>
+                    <option value="8">Позашляховик/Кросовер</option>
+                    <option value="9">Позашляховик-пікап</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Contry">Країна виробник</label>
+                </td>
+                <td>
+                   <select name="Contry" id="Contry">
+                    <option value="1">Німетчина</option>
+                    <option value="2">Британія</option>
+                    <option value="3">Італія</option>
+                    <option value="4">Франція</option>
+                    <option value="5">Іспанія</option>
+                    <option value="6">Бельгія</option>
+                    <option value="7">Польша</option>
+                    <option value="8">Нідерланди</option>
+                    <option value="9">Україна</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                      <label for="price">Ціна</label>
+                </td>
+                <td>
+                      <input type="number" min="1000" max="500000" step="1000">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                      <label>Рік випуску</label>
+                </td>
+                <td>
+                      <input type="number" min="1950" max="2023" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Product-status">Стан</label>
+                </td>
+                <td>
+                   <select name="Product-status" id="Product-status" multiple>
+                    <option value="1" selected>Бита</option>
+                    <option value="2" selected>У кредиті</option>
+                    <option value="3" selected>Нерозмитнена</option>
+                    <option value="4" selected>Нова</option>
+                    <option value="5" selected>Б/у</option>
+                    <option value="6" selected>Без документів</option>
+                    <option value="7" selected>1 власник</option>
+                    <option value="8" selected>Фірма</option>
+                    <option value="9" selected>Приватна</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 <label for="Fuel">Тип палива</label>
+                </td>
+                <td>
+                   <select name="Fuel" id="Fuel">
+                    <option value="2">Бензин</option>
+                    <option value="3">Дизельне паливо</option>
+                    <option value="4">Газ</option>
+                    <option value="5">Електро</option>
+                    <option value="6">Гібридне</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gearbox">Тип коробки передач</label>
+                </td>
+                <td>
+                   <select name="gearbox" id="gearbox" size="5" multiple>
+                    <option value="1" selected>механіка</option>
+                    <option value="2" selected>автомат</option>
+                    <option value="3" selected>напівавтомат</option>
+                   </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Color">Колір</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="color" id="color" value="green">зелений
+                    <input type="checkbox" name="color" id="color" value="black">чорний
+                    <input type="checkbox" name="color" id="color" value="yellow">жовтий
+                    <input type="checkbox" name="color" id="color" value="blue">голубий
+                    <input type="checkbox" name="color" id="color" value="pink">рожевий
+                    <input type="checkbox" name="color" id="color" value="red">червоний
+                    <input type="checkbox" name="color" id="color" value="white">білий
+                    <input type="checkbox" name="color" id="color" value="brown">коричневий
+                    <input type="checkbox" name="color" id="color" value="orange">помаранчевий
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Comfort">Комфорт</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Comfort" id="Comfort" value="Hatch">люк
+                    <input type="checkbox" name="Comfort" id="Comfort" value="Leather salon">Шкіряний салон
+                    <input type="checkbox" name="Comfort" id="Comfort" value="heated seats">підігрів сидінь
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+       <button>enter</button>
+       <button type="reset">reset</button>
+    </p>
+</form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
